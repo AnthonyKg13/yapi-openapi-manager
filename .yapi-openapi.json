@@ -1,5 +1,0 @@
-{
-  "baseUrl": "https://your-yapi.example.com",
-  "token": "project-token",
-  "timeoutMs": 15000
-}
