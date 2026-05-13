@@ -1,0 +1,4 @@
+interface:
+  display_name: "YApi OpenAPI Manager"
+  short_description: "Manage YApi OpenAPI interface workflows"
+  default_prompt: "Use $yapi-openapi-manager to manage YApi interfaces from this project."
