@@ -13,6 +13,11 @@ import urllib.request
 from pathlib import Path
 from typing import Any
 
+for stream_name in ("stdout", "stderr"):
+    stream = getattr(sys, stream_name)
+    if hasattr(stream, "reconfigure"):
+        stream.reconfigure(encoding="utf-8")
+
 DEFAULT_CONFIG_NAME = ".yapi-openapi.json"
 DEFAULT_TIMEOUT_MS = 15000
 SCRIPT_DIR = Path(__file__).resolve().parent
